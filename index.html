@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Button Project</title>
   </head>
   <body>
     <p>
@@ -13,46 +13,43 @@
       </p>
       <p>
         <label for="userPassword">Password: </label>
-        <input id="userPassword" type="password">
+        <input id="userPassword" name="password" type="password" minlength="8" required placeholder="8 characters minimum" />
       </p>
       <p>
         <label for="githubprofile">Github Username: </label>
         <input id="githubprofile" type="text" value="" placeholder="github.com/username">
       </p>
-      <p>
-        <label for="usertype">Github Profile</label>
-        <input id="githubprofile" type="text" value="" placeholder="github.com/username">
-      </p>
       <div>
-          <input type="radio" id="enterprise"
-                 name="membership" value="enterprise" checked />
-          <label for="membership">Enterprise</label>
-      </div>
+        <h3>Choose Membership Level</h3>
+        <div>
+            <input type="radio" id="enterprise"
+                   name="enterprise" value="enterprise" checked />
+            <label for="enterprise">Enterprise</label>
+        </div>
 
-      <div>
-          <input type="radio" id="pro"
-                 name="membership" value="Pro" />
-          <label for="membership">Pro</label>
-      </div>
+        <div>
+            <input type="radio" id="pro"
+                   name="pro" value="Pro" />
+            <label for="pro">Pro</label>
+        </div>
 
-      <div>
-          <input type="radio" id="free"
-                 name="membership" value="Free" />
-          <label for="membership">Free</label>
+        <div>
+            <input type="radio" id="free"
+                   name="free" value="Free" />
+            <label for="free">Free</label>
+        </div>
       </div>
-      <p>
+      <p></p>
       <div>
           <input type="checkbox" id="remember"
                 name="remember" value="remember" checked />
           <label for="remember">Remember Me</label>
       </div>
-      </p>
-
-      <p>
-        <button type="submit">Submit</button>
-      </p>
+      <p></p>
+      <div>
+        <input type="submit" value="Sign-in"/>
+      </div>
     </form>
-    </p>
 
   </body>
 </html>
