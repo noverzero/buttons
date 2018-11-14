@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Button Project</title>
-  </head>
-  <body>
-    <p>
+
+<head>
+  <meta charset="utf-8">
+  <title>Button Project</title>
+</head>
+
+<body>
+  <p>
     <form>
       <p>
         <label for="email">email: </label>
-          <input id="email" type="email" name="email" value="" placeholder="name@url.com">
+        <input id="email" type="email" name="email" value="" required placeholder="name@url.com">
       </p>
       <p>
         <label for="userPassword">Password: </label>
@@ -22,34 +24,31 @@
       <div>
         <h3>Choose Membership Level</h3>
         <div>
-            <input type="radio" id="enterprise"
-                   name="enterprise" value="enterprise" checked />
-            <label for="enterprise">Enterprise</label>
+          <input type="radio" id="enterprise" name="membership" value="enterprise" checked />
+          <label for="enterprise">Enterprise</label>
         </div>
 
         <div>
-            <input type="radio" id="pro"
-                   name="pro" value="Pro" />
-            <label for="pro">Pro</label>
+          <input type="radio" id="pro" name="membership" value="Pro" />
+          <label for="pro">Pro</label>
         </div>
 
         <div>
-            <input type="radio" id="free"
-                   name="free" value="Free" />
-            <label for="free">Free</label>
+          <input type="radio" id="free" name="membership" value="Free" />
+          <label for="free">Free</label>
         </div>
       </div>
       <p></p>
       <div>
-          <input type="checkbox" id="remember"
-                name="remember" value="remember" checked />
-          <label for="remember">Remember Me</label>
+        <input type="checkbox" id="remember" name="remember" value="remember" checked />
+        <label for="remember">Remember Me</label>
       </div>
       <p></p>
       <div>
-        <input type="submit" value="Sign-in"/>
+        <input type="submit" value="Sign-in" />
       </div>
     </form>
 
-  </body>
+</body>
+
 </html>
